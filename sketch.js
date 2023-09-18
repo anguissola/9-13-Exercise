@@ -3,6 +3,7 @@ let speed = 4;
 let diameter = 40;
 function setup() {
   createCanvas(400, 400);
+  noLoop();
 }
 
 function draw() {
@@ -17,8 +18,10 @@ function draw() {
 }
 
 function mouseClicked() {
-  noLoop();
+  loop();
 }
+
+
 
 
   
