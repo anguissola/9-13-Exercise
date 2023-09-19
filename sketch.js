@@ -4,7 +4,6 @@ let speed = 4;
 let diameter = 40;
 let outerfill = 100;
 
-var millisecond = millis();
 var canvas;
 var pre;
 var p;
@@ -66,12 +65,10 @@ function mousePressed() {
 
 
 
-//bufoonery
-// function mousePressed() {
-//   createP()
-//   p=createElement('p', "Vexation!");
-//   p.position(500,400);
-// }
+// key press
+function keyPressed() {
+  console.log("message");
+}
 
 
 //notes
@@ -79,3 +76,8 @@ function mousePressed() {
   // logic for backrgound change
 
  //figure - 10000
+
+ //message display
+   // createP()
+  // p=createElement('p', "Vexation!");
+  // p.position(500,400);
