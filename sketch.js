@@ -1,59 +1,27 @@
-let startpoint;
-let launchpoint;
-let endpoint;
-let value;
-let clickvalue;
-let r, g, b;
+let x = 200;
 let speed = 4;
 let diameter = 40;
 function setup() {
   createCanvas(400, 400);
-  noLoop();
-  startpoint = 0;
-  launchpoint = 200;
-  endpoint = 400;
-  value=("#7BB2DD");
-  clickvalue=random(r,g,b);
-  r = random(0,255);
-  g = random(0,255);
-  b = random(0,255); 
+
 }
 
 function draw() {
-
-  //drawing stuff
   background("pink");
-  fill(value);
-  stroke(value);
-  // if (mouseIsPressed) {
-  //   fill(r,g,b);
-  // } else {
-  //   fill(255);
-  // }
-  ellipse(launchpoint,200,40);
-
-  //logic
-  launchpoint = launchpoint + 1;
-
-  if (launchpoint >= endpoint || launchpoint<= 0) {
+  fill("red");
+  stroke("red");
+  ellipse(x,height/2,40);
+  x += speed;
+  if (x >= width || x<= 0) {
     speed = speed * -1;
   }
-  launchpoint += speed;
+ 
 }
-
-//mouse-initiated animation
+noloop()
 function mouseClicked() {
-  loop();
-
-  if (value === 0) {
-    value = (clickvalue);
-  } else {
-    value = (clickvalue);
-  }
+  speed = 0
 }
 
-
-
-// function mouseReleased() {
-//   noLoop();
-// }
+function mouseClicked () {
+  speed = 4
+}
