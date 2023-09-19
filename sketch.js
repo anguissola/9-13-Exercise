@@ -68,9 +68,9 @@ function mousePressed() {
 // key press
 function keyPressed() {
   if (key == "j")
-  console.log("message");
+  console.log("message" + x);
 }
-
+c
 
 //notes
 
